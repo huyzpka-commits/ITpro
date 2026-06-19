@@ -97,6 +97,22 @@ body {
   font-size: 1.2rem;
   font-weight: 900;
   letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  filter: drop-shadow(0 0 8px rgba(0, 245, 255, 0.4));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 15px rgba(0, 245, 255, 0.7));
 }
 
 .bracket { color: var(--primary); opacity: 0.6; }
@@ -977,6 +993,15 @@ body {
   font-size: 1.5rem;
   font-weight: 900;
   margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.footer-logo .logo-img {
+  width: 48px;
+  height: 48px;
 }
 
 .footer-tagline {
